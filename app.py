@@ -183,14 +183,14 @@ st.markdown(
     unsafe_allow_html=True
 )
 # Tải file labels.txt
-url = "https://raw.githubusercontent.com/maikawaii/nhanthucduoc/refs/heads/main/label.txt"
+url = "https://raw.githubusercontent.com/maikawaii/nhanthucduoclieu/refs/heads/main/label.txt"
 response = requests.get(url)
 labels = response.text.splitlines() if response.status_code == 200 else []
 if not labels:
     st.error("Không thể tải labels.txt từ GitHub.")
 
 # Tải file ánh xạ mã -> tên tiếng Việt
-mapping_url = "https://raw.githubusercontent.com/maikawaii/nhanthucduoc/main/label_vietnamese.txt"
+mapping_url = "https://raw.githubusercontent.com/maikawaii/nhanthucduoclieu/main/label_vietnamese.txt"
 response_mapping = requests.get(mapping_url)
 label_mapping = {}
 
@@ -371,7 +371,7 @@ if page == "Trang chủ":
     st.markdown("---")
     st.markdown(
         """
-        <div style='position: fixed; bottom: 10px; left: 50%; transform: translateX(-50%); width: auto; text-align: center; font-size: 22px; 
+        <div style='position: fixed; bottom: 10px; left: 50%; transform: translateX(-50%); width: auto; text-align: center; font-size: 10px; 
     font-family: "Arial", sans-serif; font-weight:color: white; font-style: italic;'>
            Design by Mai 
         </div>
