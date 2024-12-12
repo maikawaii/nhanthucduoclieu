@@ -371,9 +371,9 @@ if page == "Trang chủ":
     st.markdown("---")
     st.markdown(
         """
-        <div style='position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); width: auto; text-align: center; font-size: 22px; 
-    font-family: "Arial", sans-serif; font-weight: bold; color: white; font-style: italic;'>
-            Cảm ơn bạn đã sử dụng website!
+        <div style='position: fixed; bottom: 10px; left: 50%; transform: translateX(-50%); width: auto; text-align: center; font-size: 22px; 
+    font-family: "Arial", sans-serif; font-weight:color: white; font-style: italic;'>
+           Design by Mai 
         </div>
         """, 
         unsafe_allow_html=True
